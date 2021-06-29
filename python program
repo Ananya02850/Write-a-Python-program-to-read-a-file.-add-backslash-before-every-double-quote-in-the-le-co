@@ -1,0 +1,5 @@
+f1 = open('First.txt', 'r')
+data = f1.read()
+f2 = open('Second.txt', 'w')
+f2.write(data.replace('\"','\\\"'))
+f1.close()
